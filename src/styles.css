@@ -118,15 +118,15 @@ main {
 /* contact me */
 
 footer {
-    background: pink;
+    background-color: pink;
     padding: 30px;
     color: white;
 }
 
 .contact-me {
     display: flex;
+    align-items: center;
     justify-content: center;
-    max-height: 400px;
 }
 
 .contact-me > img {
@@ -149,6 +149,7 @@ footer {
 
 .left {
     padding: 20px;
+    max-width: 500px;
 }
 
 .left > .icons {
@@ -159,4 +160,31 @@ footer {
     display: flex;
     align-items: center;
     gap: 10px;
+}
+
+/* tablets */
+
+@media only screen and (min-width: 900px) and (max-width: 1300px) {
+    .project-cards {
+        grid-template-rows: 0.7fr 0.7fr;
+        grid-template-columns: 0.7fr 0.7fr;
+    }
+}
+
+/* phones */
+
+@media only screen and (max-width: 900px) {
+    .about-me {
+        flex-direction: column;
+    }
+
+    .project-cards {
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
+    }
+
+    .contact-me {
+        flex-direction: column;
+    }
+
 }
