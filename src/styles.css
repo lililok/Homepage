@@ -174,10 +174,6 @@ footer {
 /* tablets */
 
 @media only screen and (min-width: 900px) and (max-width: 1300px) {
-    .my-photo > p {
-        
-    }
-
     .my-photo > img {
         width: 100%;
     }
