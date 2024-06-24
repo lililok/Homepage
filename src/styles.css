@@ -22,10 +22,14 @@ header {
 }
 
 .about-me {
+    min-width: 300px;
+    display: flex;
+    justify-content: center;
+}
+
+.about-me-content {
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: center;
 }
 
 .about-me-text {
@@ -54,7 +58,8 @@ header {
 .my-photo {
     position: relative;
     text-align: center;
-    max-width: 750px;
+    max-width: 350px;
+    align-self: center;
 }
 
 .my-photo > img {
@@ -108,6 +113,10 @@ main {
 
 .line > .icons {
     display: flex;
+}
+
+.line > h5 {
+    font-size: 2em;
 }
 
 .my-work > h3 {
@@ -165,6 +174,28 @@ footer {
 /* tablets */
 
 @media only screen and (min-width: 900px) and (max-width: 1300px) {
+    .my-photo > p {
+        
+    }
+
+    .my-photo > img {
+        width: 100%;
+    }
+
+    .my-photo {
+        width: 250px;
+        float: left;
+        margin-right: 30px;
+    }
+
+    .about-me-text {
+        padding: 30px;
+    }
+
+    .about-me-content {
+        display: block;
+    }
+
     .project-cards {
         grid-template-rows: 0.7fr 0.7fr;
         grid-template-columns: 0.7fr 0.7fr;
@@ -176,6 +207,14 @@ footer {
 @media only screen and (max-width: 900px) {
     .about-me {
         flex-direction: column;
+        background-color: transparent;
+        box-shadow: none;
+    }
+
+    .about-me-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .project-cards {
